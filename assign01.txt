@@ -1,0 +1,67 @@
+#swapping numbers
+
+a = int( input("Enter a= "))  
+b = int( input("Enter b= "))  
+   
+temp = a  
+a = b  
+b = temp  
+   
+print ("a = ", a)  
+print ("b = ", b) 
+
+
+
+
+
+#calculator
+
+a = int(input("Enter 1st no = "))
+b = int(input("Enter 2nd no = "))
+
+op = input("Enter op = ")
+
+if op == "*":
+    print(a, "*", b, "=", a*b)
+elif op == "-":
+    print(a, "-", b, "=", a-b)
+elif op == "+":
+    print(a, "+", b, "=", a+b)
+elif op == "/":
+    print(a, "/", b, "=", a/b)
+else:
+    print("Wrong Choice")
+
+
+#fabonacci sequence
+
+def fab(n):
+  x=0
+  y=1
+  print(x)
+  print(y)
+  for i in range(2,n):
+    z = x + y
+    x = y
+    y = z
+  print(z)
+  fab(5)
+
+#factorial
+
+a = int(input("Enter number: "))
+temp = 1
+for i in range(1, a+1):
+    temp = temp*i
+    
+print(temp)
+
+#string operations
+
+guess = "Hurraira"
+
+print(guess[0])
+print(guess[-1])
+print(len(guess))
+print(guess[::])
+print(guess[0:len(guess):2])
